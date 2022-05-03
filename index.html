@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="task">
+        <div class="task-header">
+            <h1 class="header-title">New task list</h1>
+            <div class="task-tools">
+                <div class="task-count">∞ task</div>
+                <div class="task-filter">
+                    <button class="filterBtn active">All</button>
+                    <button class="filterBtn" data-value="false">Active</button>
+                    <button class="filterBtn" data-value="true">Completed</button>
+                </div>
+            </div>
+            <form class="task-form">
+                <input class="task-input"  placeholder="Add a new task..." autofocus="true">
+            </form>
+        </div>
+        <div class="task-items">
+            <div class="task-item">
+                <input class="task-check" type="checkbox">
+                <label class="task-name">Wet food to be bought for Alfred</label>
+                <button class="task-delete"></button>
+            </div>
+            <div class="task-item">
+                <input class="task-check" type="checkbox">
+                <label class="task-name">UI design will be prepared for Oğuzhan</label>
+                <button class="task-delete"></button>
+            </div>
+            <div class="task-item">
+                <input class="task-check" type="checkbox">
+                <label class="task-name">pay the bills</label>
+                <button class="task-delete"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
